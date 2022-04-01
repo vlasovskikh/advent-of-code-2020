@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "aoc20"
+version = "0.1.0"
+description = "Trying to get some fun with Advent of Code 2020"
+authors = ["Andrey Vlasovskikh <andrey.vlasovskikh@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.11"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.16.0"
+pytest = "^7.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
