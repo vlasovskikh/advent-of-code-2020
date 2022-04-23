@@ -1,3 +1,5 @@
+import pytest
+
 from aoc20.p17 import parse_input, simulate
 
 
@@ -10,6 +12,7 @@ def test_example_3():
     assert simulate(parse_input(data), 3) == 112
 
 
+@pytest.mark.slow
 def test_example_4():
     data = """
 .#.
