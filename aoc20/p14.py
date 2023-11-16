@@ -25,7 +25,7 @@ class Mask(Instruction):
         indexes = [i for i, c in enumerate(reversed(self.value)) if c == "X"]
         n = len(indexes)
         result = []
-        for x in range(2 ** n):
+        for x in range(2**n):
             s = masked
             for i in range(n):
                 ith = x & (1 << i)  # i-th bit of x
